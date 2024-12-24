@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: foodappconfig
+  labels:
+    name: foodappconfig
+data:
+  ConnectionStrings__DefaultConnection: Host=svc-foodapp-bd;Port=5432;Database=postgres;Username=postgres;Password=postgres;
+  ASPNETCORE_URLS: http://+:8080
+  ASPNETCORE_ENVIRONMENT: Development
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgres
+  POSTGRES_DB: postgres
+  
