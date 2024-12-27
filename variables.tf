@@ -15,7 +15,7 @@ variable "instanceType" {
 }
 
 variable "principalArn" {
-  default = ""
+  default = "arn:aws:iam::271352743622:role/voclabs"
 }
 
 variable "cidrBlocks" {
