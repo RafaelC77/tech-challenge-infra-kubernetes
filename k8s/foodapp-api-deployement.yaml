@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: c-foodappdeployment
-          image: rafaelc710/fiap_tech_challenge:1.2
+          image: 271352743622.dkr.ecr.us-east-1.amazonaws.com/food-app:latest
           ports:
             - containerPort: 8080
           env:
