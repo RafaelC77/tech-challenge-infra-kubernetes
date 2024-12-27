@@ -25,3 +25,7 @@ variable "cidrBlocks" {
 variable "regionDefault" {
   default = "us-east-1"
 }
+
+variable "labRole" {
+  default = "arn:aws:iam::271352743622:role/LabRole"
+}

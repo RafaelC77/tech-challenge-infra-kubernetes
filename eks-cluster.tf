@@ -1,6 +1,6 @@
 resource "aws_eks_cluster" "cluster-foodapp" {
   name     = var.appName
-  role_arn = data.aws_iam_role.labrole.arn
+  role_arn = var.labRole
 
   vpc_config {
     subnet_ids         = [for subnet in data.aws_subnet.subnet : subnet.id if subnet.availability_zone != "${var.regionDefault}e"]
