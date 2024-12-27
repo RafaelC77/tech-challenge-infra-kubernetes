@@ -30,6 +30,6 @@ jobs:
 
       - name: Kube Apply
         run: |
-          kubectl apply -f k8s/foodapp-api-configmap.yaml
+          kubectl apply -f k8s/foodapp-configmap.yaml
           kubectl apply -f k8s/foodapp-api-deployment.yaml
           kubectl apply -f k8s/foodapp-api-service.yaml
